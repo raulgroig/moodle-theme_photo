@@ -27,3 +27,38 @@ body {
     background-image: url([[pix:theme_mootbr17|defaultbackgroundimage]]);
     background-size: cover;
 }
+
+/*
+ * Rules for mootbr17 theme
+ */
+#page-site-index {
+    .coursebox {
+        .content .summary {
+            float: none;
+            width: 100%;
+        }
+        &.odd {          
+            .content .summary {
+                img {
+                    float: left;
+                }
+                p {
+                    text-align: left; 
+                }
+            }
+        }
+        &.even {
+            .info{
+                float: right;
+            }
+            .content .summary {
+                img {
+                    float: right;
+                }
+                p {
+                    text-align: right;   
+                }
+            }
+        }
+    }
+}
