@@ -1,6 +1,1 @@
-This theme is meant to be an example theme for extending Boost.
-
-It comes with maximum comments for all code and shows how to extend and add settings
-to a Boost based theme.
-
-It also looks nice!
+This theme is a clone of the Photo theme and was developed as example for the "Customization of the new Boost theme" lecture to the Moodlemoot Brasil 2017.
