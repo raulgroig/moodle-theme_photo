@@ -48,7 +48,8 @@ $templatecontext = [
     'bodyattributes' => $bodyattributes,
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
-    'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu)
+    'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
+    'flag-br-img' => $OUTPUT->pix_url('flag-br', 'theme_mootbr17')
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
