@@ -17,7 +17,7 @@
 /**
  * Language file.
  *
- * @package   theme_photo
+ * @package   theme_mootbr17
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -34,9 +34,9 @@ $string['brandcolor'] = 'Brand colour';
 // The brand colour setting description.
 $string['brandcolor_desc'] = 'The accent colour.';
 // A description shown in the admin theme selector.
-$string['choosereadme'] = 'Theme photo is a child theme of Boost. It adds the ability to upload background photos.';
+$string['choosereadme'] = 'Theme mootbr17 is a child theme of Boost. It adds the ability to upload background mootbr17s.';
 // Name of the settings pages.
-$string['configtitle'] = 'Photo settings';
+$string['configtitle'] = 'mootbr17 settings';
 // Background image for dashboard page.
 $string['dashboardbackgroundimage'] = 'Dashboard page background image';
 // Background image for dashboard page.
@@ -60,7 +60,7 @@ $string['loginbackgroundimage'] = 'Login page background image';
 // Background image for login page.
 $string['loginbackgroundimage_desc'] = 'An image that will be stretched to fill the background of the login page.';
 // The name of our plugin.
-$string['pluginname'] = 'Photo';
+$string['pluginname'] = 'mootbr17';
 // Preset files setting.
 $string['presetfiles'] = 'Additional theme preset files';
 // Preset files help text.

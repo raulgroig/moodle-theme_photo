@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Photo backgrounds.
+ * mootbr17 backgrounds.
  *
- * @package    theme_photos
+ * @package    theme_mootbr17s
  * @copyright  2016 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -33,7 +33,7 @@ $plugin->requires = 2016112900.00;
 
 // This is the component name of the plugin - it always starts with 'theme_'
 // for themes and should be the same as the name of the folder.
-$plugin->component = 'theme_photo';
+$plugin->component = 'theme_mootbr17';
 
 // This is a list of plugins, this plugin depends on (and their versions).
 $plugin->dependencies = [

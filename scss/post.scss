@@ -1,20 +1,20 @@
 // Post SCSS for the theme.
 
 body.pagelayout-login {
-    background-image: url([[pix:theme_photo|loginbackgroundimage]]);
+    background-image: url([[pix:theme_mootbr17|loginbackgroundimage]]);
     background-size: cover;
 }
 body.pagelayout-frontpage {
-    background-image: url([[pix:theme_photo|frontpagebackgroundimage]]);
+    background-image: url([[pix:theme_mootbr17|frontpagebackgroundimage]]);
     background-size: cover;
 }
 body.pagelayout-mydashboard {
-    background-image: url([[pix:theme_photo|dashboardbackgroundimage]]);
+    background-image: url([[pix:theme_mootbr17|dashboardbackgroundimage]]);
     background-size: cover;
 }
 body.pagelayout-course,
 body.pagelayout-incourse {
-    background-image: url([[pix:theme_photo|incoursebackgroundimage]]);
+    background-image: url([[pix:theme_mootbr17|incoursebackgroundimage]]);
     background-size: cover;
 }
 body.pagelayout-embedded,
@@ -24,6 +24,6 @@ body.pagelayout-print {
     background-image: none;
 }
 body {
-    background-image: url([[pix:theme_photo|defaultbackgroundimage]]);
+    background-image: url([[pix:theme_mootbr17|defaultbackgroundimage]]);
     background-size: cover;
 }

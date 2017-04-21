@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Photo backgrounds callbacks.
+ * mootbr17 backgrounds callbacks.
  *
- * @package    theme_photos
+ * @package    theme_mootbr17s
  * @copyright  2016 Damyon Wiese
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die();
  * @param theme_config $theme The theme config object.
  * @return string
  */
-function theme_photo_get_main_scss_content($theme) {
+function theme_mootbr17_get_main_scss_content($theme) {
     global $CFG;
 
     $scss = '';
@@ -46,8 +46,8 @@ function theme_photo_get_main_scss_content($theme) {
         // We still load the default preset files directly from the boost theme. No sense in duplicating them.
         $scss .= file_get_contents($CFG->dirroot . '/theme/boost/scss/preset/plain.scss');
 
-    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_photo', 'preset', 0, '/', $filename))) {
-        // This preset file was fetched from the file area for theme_photo and not theme_boost (see the line above).
+    } else if ($filename && ($presetfile = $fs->get_file($context->id, 'theme_mootbr17', 'preset', 0, '/', $filename))) {
+        // This preset file was fetched from the file area for theme_mootbr17 and not theme_boost (see the line above).
         $scss .= $presetfile->get_content();
     } else {
         // Safety fallback - maybe new installs etc.
@@ -55,9 +55,9 @@ function theme_photo_get_main_scss_content($theme) {
     }
 
     // Pre CSS - this is loaded AFTER any prescss from the setting but before the main scss.
-    $pre = file_get_contents($CFG->dirroot . '/theme/photo/scss/pre.scss');
+    $pre = file_get_contents($CFG->dirroot . '/theme/mootbr17/scss/pre.scss');
     // Post CSS - this is loaded AFTER the main scss but before the extra scss from the setting.
-    $post = file_get_contents($CFG->dirroot . '/theme/photo/scss/post.scss');
+    $post = file_get_contents($CFG->dirroot . '/theme/mootbr17/scss/post.scss');
 
     // Combine them together.
     return $pre . "\n" . $scss . "\n" . $post;
@@ -69,10 +69,10 @@ function theme_photo_get_main_scss_content($theme) {
  *
  * @param $settingname
  */
-function theme_photo_update_settings_images($settingname) {
+function theme_mootbr17_update_settings_images($settingname) {
     global $CFG;
 
-    // The setting name that was updated comes as a string like 's_theme_photo_loginbackgroundimage'.
+    // The setting name that was updated comes as a string like 's_theme_mootbr17_loginbackgroundimage'.
     // We split it on '_' characters.
     $parts = explode('_', $settingname);
     // And get the last one to get the setting name..
@@ -81,7 +81,7 @@ function theme_photo_update_settings_images($settingname) {
     // Admin settings are stored in system context.
     $syscontext = context_system::instance();
     // This is the component name the setting is stored in.
-    $component = 'theme_photo';
+    $component = 'theme_mootbr17';
 
 
     // This is the value of the admin setting which is the filename of the uploaded file.
@@ -93,13 +93,13 @@ function theme_photo_update_settings_images($settingname) {
     $fullpath = "/{$syscontext->id}/{$component}/{$settingname}/0{$filename}";
 
     // This location matches the searched for location in theme_config::resolve_image_location.
-    $pathname = $CFG->dataroot . '/pix_plugins/theme/photo/' . $settingname . '.' . $extension;
+    $pathname = $CFG->dataroot . '/pix_plugins/theme/mootbr17/' . $settingname . '.' . $extension;
 
     // This pattern matches any previous files with maybe different file extensions.
-    $pathpattern = $CFG->dataroot . '/pix_plugins/theme/photo/' . $settingname . '.*';
+    $pathpattern = $CFG->dataroot . '/pix_plugins/theme/mootbr17/' . $settingname . '.*';
 
     // Make sure this dir exists.
-    @mkdir($CFG->dataroot . '/pix_plugins/theme/photo/', $CFG->directorypermissions, true);
+    @mkdir($CFG->dataroot . '/pix_plugins/theme/mootbr17/', $CFG->directorypermissions, true);
 
     // Delete any existing files for this setting.
     foreach (glob($pathpattern) as $filename) {
