@@ -17,7 +17,7 @@
 /**
  * A two column layout for the boost theme.
  *
- * @package   theme_boost
+ * @package   theme_mootbr17
  * @copyright 2016 Damyon Wiese
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -52,5 +52,5 @@ $templatecontext = [
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
-echo $OUTPUT->render_from_template('theme_boost/columns2', $templatecontext);
+echo $OUTPUT->render_from_template('theme_mootbr17/columns2', $templatecontext);
 
