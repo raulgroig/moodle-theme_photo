@@ -2,3 +2,9 @@
 
 $card-bg: rgba(255, 255, 255, 0.98);
 
+/*
+ * Variables for mootbr17 theme
+ */
+$brand-primary: #f98012 !default;
+$drawer-bg: darken($brand-primary, 30%) !default;
+$body-bg: lighten($brand-primary, 40%) !default;
